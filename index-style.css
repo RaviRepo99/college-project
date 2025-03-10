@@ -1,0 +1,106 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  .logo img{
+    height: 70px;
+  }
+  .logo span {
+    color: var(--color-primary);
+  }
+  .menu-bar {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+    box-shadow: 0 0 0 1px #fff;
+  }
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+  }
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  .dropdown-menu {
+    display: none;
+  }
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+  }
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  .dropdown-menu-1 {
+    display: none;
+  }
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+  }
+  .hero {
+    height: calc(100vh - 80px);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    color: #fff;
+    }
+    .content{
+      margin-top: 250px;
+      }
+    .content p{
+        padding-top: 25px;
+        font-size: 30px;
+        text-shadow:  3px 2px 0 rgb(36, 186, 245);
+      }
+     .content h1{
+        font-size: 3rem;
+        text-shadow:  3px 2px 0 rgb(36, 186, 245);
+      }
